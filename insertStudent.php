@@ -18,11 +18,12 @@ $sql = "INSERT INTO `students`(`fname`, `lname`, `gender`, `age`)
 VALUES ('$fname','$lname','$gender',$age)";
 //выполнение запроса
 $result = $connect->query($sql);
+sleep(3);
 if($result){
-    echo "<p>Данные о студенте добавлены</p>";
+    echo "ok";
 }
 else{
-    echo "<p>Ошибка добавления данных</p>";
+    echo "error";
 }
 
 
