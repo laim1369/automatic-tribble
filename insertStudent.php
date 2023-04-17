@@ -20,7 +20,6 @@ VALUES ('$fname','$lname','$gender',$age)";
 $result = $connect->query($sql);
 if($result){
     echo "<p>Данные о студенте добавлены</p>";
-    header("Location:index.php"); //переход на главную страницу
 }
 else{
     echo "<p>Ошибка добавления данных</p>";
